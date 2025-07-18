@@ -12,7 +12,7 @@ code {
     source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-body{ 
+body {
   display: flex;
   justify-content: center;
   align-items: center;
