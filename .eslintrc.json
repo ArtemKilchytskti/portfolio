@@ -1,0 +1,33 @@
+{
+  "extends": ["react-app", "react-app/jest", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    "quotes": [
+      "error",
+      "double",
+      { "avoidEscape": true, "allowTemplateLiterals": true }
+    ]
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

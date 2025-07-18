@@ -1,0 +1,113 @@
+.about-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-content {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 60px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-wrapper h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-wrapper img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 3px solid rgba(102, 126, 234, 0.3);
+  margin: 30px 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.about-wrapper img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  border-color: rgba(102, 126, 234, 0.5);
+}
+
+.about-wrapper a {
+  display: inline-block;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+  margin-top: 30px;
+}
+
+.about-wrapper a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.about-wrapper a:active {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .about-wrapper {
+    padding: 15px;
+  }
+
+  .about-content {
+    padding: 40px 30px;
+  }
+
+  .about-wrapper h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-wrapper img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    padding: 30px 20px;
+  }
+
+  .about-wrapper h2 {
+    font-size: 2rem;
+  }
+
+  .about-wrapper img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-wrapper a {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}

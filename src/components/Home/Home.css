@@ -1,0 +1,124 @@
+.home-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-section {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 60px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #4a5568;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #5a5a5a;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navigation-section {
+  margin-top: 40px;
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.nav-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.nav-button:active {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .home-wrapper {
+    padding: 15px;
+  }
+
+  .hero-section {
+    padding: 40px 30px;
+  }
+
+  .main-title {
+    font-size: 2.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.6rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 30px 20px;
+  }
+
+  .main-title {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .nav-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
